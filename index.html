@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="message-container">
+      <p></p>
+    </div>
+    <div class="to-do-container">
+      <form name="form-control">
+        <div class="inputs-wrapper">
+          <div class="label-container">
+            <label for="text"> Write down your thoughts and plans </label>
+          </div>
+          <div class="input-container">
+            <input type="text" name="task" id="text" />
+            <button class="submit-btn">
+              <img src="./img/plus-square-solid.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="filter-container">
+          <input
+            class="custom-radio"
+            type="radio"
+            name="all-task"
+            id="all-task"
+            value="all"
+            checked
+          />
+          <label for="all-task">All tasks</label>
+          <input
+            class="custom-radio"
+            type="radio"
+            name="done-task"
+            id="done-task"
+            value="done"
+          />
+          <label for="done-task">What I've done</label>
+          <input
+            class="custom-radio"
+            type="radio"
+            name="need-to-do"
+            id="need-to-do"
+            value="needToDo"
+          />
+          <label for="need-to-do">What I've to do</label>
+        </div>
+      </form>
+      <ul class="tasks-list"></ul>
+    </div>
+  </body>
+</html>
+
+
